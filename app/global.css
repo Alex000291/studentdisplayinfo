@@ -1,14 +1,8 @@
-:root {
-    --carolina-blue: #74B3CE;
-    --blue-munsell: #508991;
-    --prussian-blue: #172A3A;
-}
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--prussian-blue);
+    background-color: var(#172A3A);
 
 }
 

@@ -1,11 +1,6 @@
-:root {
-    --carolina-blue: #74B3CE;
-    --blue-munsell: #508991;
-    --prussian-blue: #172A3A;
-}
 
 .header {
-    background-color: var(--carolina-blue);
+    background-color: var(#74B3CE);
     width: 768px;
     height: 50px;
     margin: 15px auto;
