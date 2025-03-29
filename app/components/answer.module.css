@@ -1,0 +1,59 @@
+.container {
+    width: 600px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.description {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.lesson, .student_name, .score, .full_score, .fully_correct, .not_fully_correct {
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.fully_correct {
+    color: #fff;
+    background: linear-gradient(45deg, #ffffff, #ffcc00);
+    background-size: 500% 400%;
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text; /* 兼容 Safari */
+    color: transparent;
+    animation: glitter 5s infinite linear;
+    /* text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.4); */
+}
+
+.not_fully_correct {
+    color: #ff0000;
+}
+
+@keyframes glitter {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+
+
+

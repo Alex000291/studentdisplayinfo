@@ -1,10 +1,14 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
+
+import Header from "./components/Header";
+import Rank from "./components/Rank";
+
+export default async function Home() {
+
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <>
+      <Header />
+      <Rank />
+    </>
   );
 }

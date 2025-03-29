@@ -1,0 +1,52 @@
+:root {
+    --carolina-blue: #74B3CE;
+    --blue-munsell: #508991;
+    --prussian-blue: #172A3A;
+}
+
+.header {
+    background-color: var(--carolina-blue);
+    width: 768px;
+    height: 50px;
+    margin: 15px auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.home, .profile {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color: black;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.signOut {
+    padding: 10px;
+    margin-left: auto;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.home:hover, .profile:hover {
+    border: 2px solid white;
+}
+
+.signOut:hover {
+    border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 80%;
+    }
+}
