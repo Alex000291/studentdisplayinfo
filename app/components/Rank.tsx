@@ -20,8 +20,19 @@ export default async function Rank() {
         .from("answer")
         .select("*");
 
-    const answersGroupedByStudent = data.reduce<Record<string, Answer[]>>((acc, answer) => {
-        acc[answer.student_name] = acc[answer.student_name] || [];
+    if (error) {
+        console.error('Error fetching answers:', error);
+        return <div>Error loading rankings</div>;
+    }
+
+    if (!data || data.length === 0) {
+        return <div>No answers found</div>;
+    }
+
+    const answersGroupedByStudent = data.reduce<Record<string, Answer[]>>((acc, answer: Answer) => {
+        if (!acc[answer.student_name]) {
+            acc[answer.student_name] = [];
+        }
         acc[answer.student_name].push(answer);
         return acc;
     }, {});
